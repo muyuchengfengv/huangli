@@ -9,7 +9,7 @@ class MyPlugin(Star):
     def __init__(self, context: Context,config: AstrBotConfig):
         super().__init__(context,config)
         self.api_key = config.get("DEEPSEEK_API_KEY", 100000)
-        self.api_url = "https://api.deepseek.com/
+        self.api_url = "https://api.deepseek.com/"
         self.session = None
 
     async def initialize(self):
